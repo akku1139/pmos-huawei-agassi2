@@ -8,7 +8,7 @@ pkgdesc="Huawei Mediapad T5 kernel fork"
 arch="aarch64"
 _carch="arm64"
 _flavor="huawei-agassi2"
-url="https://github.com/MeexReay/linux-huawei-agassi2"
+url="https://github.com/akku1139/android_kernel_huawei_agassi2"
 license="GPL-2.0-only"
 options="!strip !check !tracedeps pmb:cross-native"
 makedepends="
@@ -24,11 +24,11 @@ makedepends="
 "
 
 # Source
-_repository="linux-huawei-agassi2"
-_commit="be8a0e576e736bdb4b7a19e65ced68d5e388dfbe"
+_repository="android_kernel_huawei_agassi2"
+_commit="acb06e8cf69d9ec3feedb23fc28a0d1437b1131d"
 _config="config-$_flavor.$arch"
 source="
-	$pkgname-$_commit.tar.gz::https://github.com/MeexReay/$_repository/archive/$_commit.tar.gz
+	$pkgname-$_commit.tar.gz::https://github.com/akku1139/$_repository/archive/$_commit.tar.gz
 	$_config
 	linux4.2-gcc10-extern_YYLOC_global_declaration.patch
 	fix-check-lxdialog.patch
@@ -62,7 +62,7 @@ package() {
 }
 
 sha512sums="
-a04d66e289fc3699edd91bc3c3d1f22c77ba530e7a14bc74057e41304247386eeb5a24f22f120cc4ab21c68e9fdc513e94a2d28d6590ab0f7b1752795a18a763  linux-huawei-agassi2-be8a0e576e736bdb4b7a19e65ced68d5e388dfbe.tar.gz
+77e7100e512e1b6de22768738ede49e43340540edf5a5d885566c81470ef300483ce67e31cdc5533deb7e2c4be165a17a6a38cae4dc8da0f8658218029b18aa5  linux-huawei-agassi2-acb06e8cf69d9ec3feedb23fc28a0d1437b1131d.tar.gz
 d6feca144469ab8e8a9377f390b7858c2d6bf6a4e298765f7567df1a614e020d73f3bdf974a9517ad79385862688816da44b8be22f4d5a7649aa05b2ab9d6e0c  config-huawei-agassi2.aarch64
 eaf2e61fcb508cdd239b8fed209d2a09ecac77287f6b46d003918fdf1c6fa2ee63f7390f3ff7c49029b8ed6cbcdd81c7e9a4b1ece9f5060b6fc84e322bd47f41  linux4.2-gcc10-extern_YYLOC_global_declaration.patch
 182be3c596b9cc267ac108d7cf03fc8c328ccc6b36770800e4dcedea8d1bb65e3f5eacf590c2948f58b1418cc60a1670ba77dde8c259e428d158c31b6e1dbaf5  fix-check-lxdialog.patch
