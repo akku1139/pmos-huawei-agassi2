@@ -1,7 +1,7 @@
 # pmos-huawei-agassi2
 PostmarketOS port for Huawei MediaPad T5
 
-Fastboot firmware images: https://files.meex.lol/huawei-agassi2/agassi2_firmware_fastboot.zip
+Fastboot firmware images: https://github.com/akku1139/MediaPad-T5-blobs/releases/tag/2025-08-09
 
 ## installation
 
